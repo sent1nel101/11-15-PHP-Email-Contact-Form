@@ -1,5 +1,8 @@
 <?php
+
 $error = ""; $successMessage = "";
+if ( $_SERVER['REQUEST_METHOD'] === 'POST' )
+{
 if ($_POST){
     if (!$_POST["email"]){
         $error .= "An email address is required. <br>";
@@ -31,6 +34,7 @@ if ($_POST){
             $error = '<div class="alert alert-danger" role="alert"><strong><p>Your message couldn\'t be sent.</p></strong></div>';
         }
     }
+}
 }
 
 ?>
@@ -104,6 +108,11 @@ if ($_POST){
             return true;
         }
     })
+</script>
+<script>
+if ( window.history.replaceState ) {
+  window.history.replaceState( null, null, window.location.href );
+}
 </script>
 
 </body>
