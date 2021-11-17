@@ -1,0 +1,30 @@
+*, body, html{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    width: 560px;
+    margin: 0 auto;    
+}
+.section{
+    width: 100%;
+}
+#result{
+    font-variant: small-caps;
+    font-weight: bold;
+    font-size: 24px;
+}
+#error{
+    display: block;
+    width: 100%;
+}
+#resultText{
+    Font-variant:small-caps;
+}
+.alert{
+    width:100%
+}
+form{
+    margin-top: 1rem;
+}
