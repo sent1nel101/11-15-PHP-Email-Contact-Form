@@ -13,7 +13,7 @@ if ($_POST){
     }
     
     if (!$_POST["message"]){
-        $error .= "The message fieldis required. <br>";
+        $error .= "The message field is required. <br>";
     }
 
     if ($_POST['email'] && filter_var($_POST['email'], FILTER_VALIDATE_EMAIL) === false) {
